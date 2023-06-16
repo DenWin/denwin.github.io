@@ -38,6 +38,36 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+```csharp
+using System;
+
+namespace HelloWorldApplication {
+   class HelloWorld {
+      static void Main(string[] args) {
+         /* Mein erstes kleines Programm in C# */
+         Console.WriteLine("Hello World in C#!");
+         Console.ReadKey();
+      }
+   }
+}
+```
+
+```java
+public class HelloWorld 
+{
+ 
+       public static void main (String[] args)
+       {
+             // Ausgabe Hello World!
+             System.out.println("Hello World!");
+       }
+}
+```
+
+```excel
+=DATE(A1;1;5)-WEEKDAY(DATE(A1;1;4);11)+(A2-1)*7 
+```
+
 #### Header 4
 
 *   This is an unordered list following a header.
