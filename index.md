@@ -151,9 +151,8 @@ public class HelloWorld
 <dd>Green</dd>
 </dl>
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+
+### Tag Cloud
 
 <h1>Tag Cloud</h1>
 {% assign tags = site.tags | sort %}
@@ -166,6 +165,12 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 </span>
 {% endfor %}
 
+
+### single-line codes
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
 ```
 The final element.
