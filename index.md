@@ -1,7 +1,13 @@
 ---
 title: Welcome to my blog
 layout: default
+tags:
+- Jekyll
+- GitHub Pages
+- Blog
+- Startseite
 ---
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
