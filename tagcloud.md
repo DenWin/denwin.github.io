@@ -32,3 +32,9 @@ tags:
   Name: {{ tag | first }},
   count: {{ tag | last | size}}
 {% endfor %}
+
+## sorting
+
+{% capture _site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %}###{% endunless %}{% endfor %}{% endcapture %}
+
+{% assign tags_alphabetically_sorted = _site_tags | split:'###' | sort %}
