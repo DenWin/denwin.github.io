@@ -1,12 +1,20 @@
 ---
-title: Tagcloud
-layout: default
+layout: post_markdown
+title: Adding Tags to Posts on GitHub Pages
+description: How to use Jekyll tags on GitHub Pages blogs.
 tags:
 - Jekyll
-- Tagcloud
+- GitHub Pages
+- Blog
 ---
 
-## Version 1
+## Version 1 - page tags
+
+{% for tag in page.tags %}
+    {{ tag }}
+{% endfor %}
+
+## Version 1 - site tags
 
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
@@ -18,7 +26,7 @@ tags:
 </span>
 {% endfor %}
 
-## Version 2
+## Version 2 - site tags
 
 {% for tag in site.tags %}
   Name: {{ tag | first }},
