@@ -6,7 +6,8 @@ tags:
 - Tagcloud
 ---
 
-<h1>Tag Cloud</h1>
+## Version 1
+
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
@@ -15,4 +16,11 @@ tags:
             {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
 </span>
+{% endfor %}
+
+## Version 2
+
+{% for tag in site.tags %}
+  Name: {{ tag | first }},
+  count: {{ tag | last | size}}
 {% endfor %}
